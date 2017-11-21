@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather app</title>
+  <link rel="stylesheet" href="pe-icon-set-weather/css/pe-icon-set-weather.css">
+  <link rel="stylesheet" href="pe-icon-set-weather/css/helper.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+</head>
+<body>
+  <div id="results">
+    <h3 class="resulthead">Your location results</h3>
+    <div id="innercontainer">
+      <div id="locname">
+        <h2 class="text-center">City,Country</h3>
+      </div>
+      <div class="row">
+        <div id="icon" class="col-3">
+          <i class="pe-is-w-umbrella pe-5x pe-va"></i>
+        </div>
+        <div id="disc" class="col-6">
+          <h1>CLOUDY</h2>
+        </div>
+      </div>
+      <div id="temp" class="text-center">
+        <h1>°C</h1>
+      </div>
+    </div>
+    <div id="buttons">
+      <button type="button" class="btn btn-dark" id="cent">Result in °C</button>
+      <button type="button" class="btn btn-dark" id="faren">Result in °F</button>
+    </div>
+  </div>
+
+
+  <div id="click">
+    <h3>Click to find your weather</h3>
+    <div id="clickicon">
+      <i class="fa fa-map-marker"></i>
+    </div>
+  </div>
+ 
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="weather.js"></script>
+</body>
+</html>

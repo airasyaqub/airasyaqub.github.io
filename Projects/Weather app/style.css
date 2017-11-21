@@ -1,0 +1,107 @@
+body{
+background-color: rgb(35,37,38); 
+
+}
+
+#results{
+	display: none;
+}
+
+.resulthead{
+
+  color: white;
+  display: inline-block;
+  position: absolute;
+  left: 18.5em;
+  top: 2em;
+}
+
+
+#innercontainer{
+	background-color: #D3D3D3;
+	width: 27em;
+    height: 25em;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    left: 27em;
+    top: 7em;
+}
+
+#locname{
+
+	font-family: 'Amaranth', sans-serif;
+	margin-top: 0.2em;
+	padding-bottom: 0.5em;
+	border-bottom: 3px solid black; 
+}
+
+#icon{
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+#disc{
+
+font-size: 50px;
+padding-top: 0.8em;
+padding-left: 2em;
+font-weight: bold;
+
+}
+
+#disc h1{
+font-size: 50px;
+	font-weight: bold;
+}
+
+#temp{
+	position: relative;
+	top: 7em;
+}
+
+#temp h1{
+     
+     font-weight: bold;
+     font-size: 5em;
+
+}
+
+
+#clickicon {
+	 display: inline-block;
+	 position: absolute;
+	 left: 37em;
+	 top: 12em;
+}
+
+#clickicon i {
+	font-size:250px;
+	color: #D8D8D8;
+}
+
+#click h3{
+	color: white;
+	position: absolute;
+	display: inline-block;
+	top:5em;
+	left: 18em;
+}
+
+#buttons{
+
+	display: inline-block;
+	position: absolute;
+	top: 35em;
+	left: 30em
+}
+
+#faren{
+	margin-left: 6em;
+}
+
+.btn-dark {
+    color: black;
+    background-color: #D3D3D3;
+    border-color: #343a40;
+}
