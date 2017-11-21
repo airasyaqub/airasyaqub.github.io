@@ -78,6 +78,14 @@ font-size: 50px;
 #clickicon i {
 	font-size:250px;
 	color: #D8D8D8;
+	-moz-transition: font-size 400ms;
+     -o-transition: font-size 400ms;
+        transition: font-size 400ms;
+}
+
+.iconanim{
+
+	font-size:290px !important;
 }
 
 #click h3{

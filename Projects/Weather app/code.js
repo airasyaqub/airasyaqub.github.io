@@ -2,10 +2,14 @@ $(document).ready(function(){
 
 $('#clickicon i').on('mouseenter',function(){
      $(this).css({color:'#707070'});
+     //$(this).animate({fontSize:'280px'},400);
+     $(this).addClass('iconanim');
 });
 
 $('#clickicon i').on('mouseleave',function(){
      $(this).css({color:'#D8D8D8'});
+     //$(this).animate({fontSize:'250px'},400);
+     $(this).removeClass('iconanim');
 });
 
 
@@ -127,7 +131,7 @@ $.ajax('https://fcc-weather-api.glitch.me/api/current?lat='+array[0]+'&lon='+arr
         temperature=response.main.temp;
         $('#click').fadeOut(500,function(){
               
-                $('#results').fadeIn(1000);
+                $('#results').slideDown(1000);
         });
         //$('#results').fadeIn(500);
      }
