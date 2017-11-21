@@ -1,2 +1,1 @@
-# airasyaqub.github.io
-My personel portfolio website
+This app gets your geo location and tells you about weather
