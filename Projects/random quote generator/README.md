@@ -1,1 +1,1 @@
-This app gets your geo location and tells you about weather
+This app displays random quote and can also tweet it
