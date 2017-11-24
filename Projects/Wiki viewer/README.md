@@ -1,1 +1,1 @@
-This app gets your geo location and tells you about weather
+This app is a wikipidea search engine
