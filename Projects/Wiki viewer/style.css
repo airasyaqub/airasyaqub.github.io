@@ -1,0 +1,78 @@
+#initspg{
+
+  margin-top: 18%;
+ 
+
+}
+
+#initspg .form-control{
+
+
+display: inline-block;
+width: 65%;
+border-radius: 0px;
+
+}
+
+#initspg h1{
+
+	margin-bottom: 3rem;
+	font-size: 3rem;
+}
+
+#initspg p{
+
+	margin-top: 2rem;
+	margin-bottom: 0;
+	color: grey;
+}
+
+#initspg .row{
+
+justify-content: center;
+margin-top: 2%;
+
+}
+
+#initspg .row button{
+    color: black;
+	margin-right: 2em;
+}
+
+#initspg .row a{
+	color: black;
+}
+
+
+#sndspg{
+
+	display: none;
+}
+
+#sndspg .form-inline{
+
+  margin-left: 5em;
+
+}
+
+#sndspg .form-control{
+
+	width: 20em;
+}
+
+#sndspg .btn-outline-secondary{
+
+    color: black;
+    border-color: black;
+
+}
+
+#results .link{
+
+	width: 45%;
+	margin-top: 5%;
+}
+
+#sndspg h1{
+	margin-right: 8em;
+}
