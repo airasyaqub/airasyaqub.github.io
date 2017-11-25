@@ -8,7 +8,7 @@ function generatequote(){
  
 $('p').fadeOut(1);
 $('footer').fadeOut(1);
-$.ajax('https://random-quote-generator.herokuapp.com/api/quotes/',{
+$.ajax('https://talaikis.com/api/quotes/random/',{
      method: 'GET',
      dataType: 'json',
      success: function(response){
@@ -20,8 +20,8 @@ $.ajax('https://random-quote-generator.herokuapp.com/api/quotes/',{
 
 function getquote(res){
 var i=Math.floor(Math.random()*49);
- quote=res[i].quote;
- author=res[i].author;
+ quote=res.quote;
+ author=res.author;
 $('blockquote').show();
 $('p').text(quote).fadeIn(300);
 $('footer').text(author).fadeIn(300);
