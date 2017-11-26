@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  /* body... */
+	/* body... */
 
-  
+	
 
 var globalres;
 var keyflag=0;
@@ -44,7 +44,7 @@ $('#searchbox1').keypress(function(e){
 
 
 $('#searchbox').autocomplete({
-   source: function(query, result) {
+	 source: function(query, result) {
 
 $.ajax({
     url:"https://en.wikipedia.org/w/api.php?list=search&search="+query.term+"&prop=info&inprop=url&action=opensearch&utf8=&format=json",
