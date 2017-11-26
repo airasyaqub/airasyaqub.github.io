@@ -5,6 +5,19 @@
 
 }
 
+
+.ui-menu-item .ui-menu-item-wrapper:hover
+{       
+	   border: none !important;
+	   color: black;
+       
+}
+
+.ui-widget{
+
+	font-size: 16px;
+}
+
 #initspg .form-control{
 
 
@@ -51,7 +64,7 @@ margin-top: 2%;
 
 #sndspg .form-inline{
 
-  margin-left: 5em;
+  
 
 }
 
@@ -69,10 +82,10 @@ margin-top: 2%;
 
 #results .link{
 
-	width: 45%;
+	
 	margin-top: 5%;
 }
 
 #sndspg h1{
-	margin-right: 8em;
+	
 }
