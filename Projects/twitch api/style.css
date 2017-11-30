@@ -1,0 +1,111 @@
+body{
+	background-color: rgb(35,37,38); 
+}
+
+#image img{
+
+margin: 0 35%;
+margin-top: 5%;
+}
+
+#result{
+
+	margin-top: 5%;
+	margin-bottom: 2%
+}
+
+#result .card{
+
+margin: 0 auto;
+
+
+}
+
+#result #topbtns .btn{
+    
+	width:10rem; 
+}
+
+#inputgrp{
+
+margin: 3% 0; 
+
+}
+
+.usr{
+
+background-color: #DCDCDC;
+border-bottom: 1px solid black;
+padding-top: 2em;
+
+}
+
+.usr img{
+   
+   display: inline-block;
+   margin-left: 1em;
+   border-radius: 50%;
+   padding-bottom: 0.5em;
+
+}
+
+.usr .row .usrname{
+
+	margin: auto 0;
+	font-weight: bold;
+	color: orange;
+	padding: 0;
+}
+
+.offline .row .status{
+
+  margin: auto 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+
+}
+
+.online .row .status{
+
+  margin: auto 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+
+}
+
+
+
+.usr p{
+
+   margin: 1em 0;
+   margin-left: 2em;
+   color: #606060;
+   font-family: 'EB Garamond', serif;
+}
+
+
+.all{
+
+
+}
+
+.online{
+
+
+}
+
+.offline{
+
+
+}
+
+.goq{
+
+
+}
