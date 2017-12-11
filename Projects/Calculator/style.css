@@ -1,0 +1,143 @@
+body{
+
+	background: #C9CCD3;
+ 
+}
+
+#skel{
+
+   margin: 0 auto;
+   margin-top: 4em;
+}
+
+.card-block{
+
+ background-color: #404040;
+ border-radius: 3px;
+
+}
+
+input{
+
+  margin: 0 1.6em;
+  text-align: right;
+  height: 50px;
+  width: 370px;
+  border: 2px solid black;
+  padding: 0px;
+  font-size: 25px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-weight: bold;
+  background-color: #bccd95;
+}
+
+
+#sty{
+   
+   background-color: black;
+   border: 1px solid black;
+   height: 40px;
+   margin-bottom: 20px
+
+}
+
+#sty p {
+
+	margin-left: 1.5em;
+	font-size: 1.5em;
+	color: white;
+	display: inline-block;
+}
+
+hr{
+
+	display: inline-block;
+	color: red;
+
+}
+
+#solar{
+
+	background-color: #996633;
+	width: 100px;
+	height: 30px;
+	margin-top: 3px;
+}
+
+#solar p{
+	border-right: 2px solid black;
+	margin-left: 28px;
+	height: 30px;
+}
+
+.buttons{
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 80px 80px 80px 80px 80px;
+	grid-template-rows: 80px 80px 80px 80px;
+}
+
+.btn-normal{
+    
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    background-color: grey;
+    margin: 0 0.4em;
+    margin-bottom: 14px;
+    outline: none;
+    border-style: none;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+#AC,#CE{
+
+background-color: #600000;
+
+}
+
+
+.btn-plus{
+    display: inline;
+    border-radius: 10px;
+    width: 60px;
+    height: 140px;
+    font-size: 25px;
+    background-color: grey;
+    margin: 0 0.4em;
+    margin-bottom: 14px;
+    outline: none;
+    border-style: none;
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+
+button:active{
+
+  position: relative;
+  top: 2px;
+
+}
+
+button:focus{
+
+	outline: none;
+}
+
+
+#des{
+
+margin-top: 0.4em;
+font-family: 'EB Garamond';
+font-size: 3em;
+
+
+}
