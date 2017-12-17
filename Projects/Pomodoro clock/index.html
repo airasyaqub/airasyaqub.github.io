@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomdoro clock</title>
+</head>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css" />
+  <script src="code.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+<body>
+
+  <div class="container text-center" id="head">
+    <h1>Pomodoro clock</h1> 
+  </div>
+
+  <div id="sessions" class="container">
+    <div id="breakbtns" class="col-6 text-center">
+      <h4>Break length</h4>
+      <button type="button" class="brkneg bol" style="display: inline-block;">-</button>
+      <p class="num" style="display: inline-block;">5</p>
+      <button type="button" class="brkpos bol" style="display: inline-block;">+</button>
+    </div>
+    <div id="workbtns" class="col-6 text-center">
+      <h4>Session length</h4>
+      <button type="button" class="sneg bol" style="display: inline-block;">-</button>
+      <p class="num1" style="display: inline-block;">25</p>
+      <button type="button" class="spos bol" style="display: inline-block;">+</button>
+    </div>
+  </div>
+  
+  <div id="circle" class="text-center">
+    <p id="name">Session</p>
+    <p id="time">25:00</p>
+  </div>
+
+  <div id="dialog" title="Instructions">
+    <p>1- Click inside the circle to start/pause the timer.<br><br>2- During countdown you must pause the timer in order to change the session/break time<br><br>3- Changing the timer will reset the session/break countdown </p>
+  </div>
+
+  <footer class="text-center">
+    <p id="inst">Instructions</p>
+    <p id="linkp">Designed by <a href="https://www.facebook.com/airasyaqub1" target="_blank">M.Airas yaqub</a></p>
+  </footer>
+  
+ 
+</body>
+</html>
+

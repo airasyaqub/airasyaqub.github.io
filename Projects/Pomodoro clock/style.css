@@ -1,0 +1,102 @@
+
+body{
+	background: #202020; 
+	/*#596164;*/
+}
+
+
+#head h1{
+
+	font-family: 'Lobster', cursive;
+	color: white;
+	font-size: 6em;
+}
+
+#circle{
+
+	
+	width: 360px;
+	height: 320px;
+	margin: 0 auto;
+	margin-top: 0.3em;
+	border: 3px solid orange;
+    border-radius: 50%;
+    cursor: pointer;
+    /*background: linear-gradient(0deg, rgb(255, 138, 128) 0%,rgb(255, 138, 128) 40%,#596164 40%);*/
+}
+
+/*#break button{
+
+	height: 0;
+	background: none;
+	border: none;
+
+}*/
+
+#sessions{
+
+	display: flex;
+	margin-top: 2em;
+}
+
+#sessions button{
+
+	font-size: 2em;
+	border:none;
+	background: none;
+	cursor: pointer;
+	outline: none;
+	color: white;
+}
+
+#sessions p {
+
+	font-size: 2em;
+	color: white;
+}
+
+#sessions h4 {
+
+	color: white;
+}
+
+
+#name{
+
+font-size: 2.4em;
+font-weight: bold;
+margin-top: 2em;
+color: white;
+
+}
+
+#time{
+
+	font-size: 3.2em;
+	margin-top: 1em;
+	color: white;
+}
+
+
+
+footer p{
+   color: orange;
+   margin-top: 1.3em;
+}
+
+#linkp{
+
+	margin-top: 0.7em;
+}
+
+#inst{
+
+	cursor: pointer;
+}
+
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 300px 300px  ;
+	grid-template-rows: 70px;
+}
