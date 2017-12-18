@@ -17,13 +17,14 @@ var n=d.getHours();
 var sky;
 
 if(n>=6&&n<=18){
-sky='night';
+sky='day';
 
 }
 
 else {
-    sky='day';
+    sky='night';
 }
+
 
 
 var sunny = /(sun|clear|calm|hot)+/i;
