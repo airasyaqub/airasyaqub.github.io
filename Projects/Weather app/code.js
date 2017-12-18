@@ -12,7 +12,18 @@ $('#clickicon i').on('mouseleave',function(){
      $(this).removeClass('iconanim');
 });
 
+var d=new Date();
+var n=d.getHours();
+var sky;
 
+if(n>=6&&n<=18){
+sky='night';
+
+}
+
+else {
+    sky='day';
+}
 
 
 var sunny = /(sun|clear|calm|hot)+/i;
@@ -27,27 +38,27 @@ var sleet = /sleet+/i;
 
 function weathericon(res){
 
-if(sunny.test(res.weather[0].description)){
+if(sunny.test(res.weather[0].description)&&sky=='day'){
     
     $('#icon > i ').attr('class','pe-is-w-sun-2-f pe-5x pe-va');    
 }
-else if(breeze.test(res.weather[0].description)){
+else if(breeze.test(res.weather[0].description)&&sky=='day'){
 
      $('#icon > i ').attr('class','pe-is-w-wind-2 pe-5x pe-va'); 
 
 }
-else if(storm.test(res.weather[0].description)){
+else if(storm.test(res.weather[0].description)&&sky=='day'){
 
      $('#icon > i ').attr('class','pe-is-w-thunderbolt-2 pe-5x pe-va'); 
 
 }
-else if(cloudy.test(res.weather[0].description)){
+else if(cloudy.test(res.weather[0].description)&&sky=='day'){
 
      $('#icon > i ').attr('class','pe-is-w-mostly-cloudy-2-f pe-5x pe-va'); 
 
 }
 
-else if(rainy.test(res.weather[0].description)){
+else if(rainy.test(res.weather[0].description)&&sky=='day'){
 
      $('#icon > i ').attr('class','pe-is-w-heavy-rain-1-f pe-5x pe-va'); 
 
@@ -57,6 +68,33 @@ else if(snowy.test(res.weather[0].description)){
      $('#icon > i ').attr('class','pe-is-w-snowflake pe-5x pe-va'); 
 
 }
+//-------------------------------------------------------
+else if(sunny.test(res.weather[0].description)&&sky=='night'){
+    
+    $('#icon > i ').attr('class','pe-is-w-moon-4-f pe-5x pe-va');    
+}
+else if(breeze.test(res.weather[0].description)&&sky=='night'){
+
+     $('#icon > i ').attr('class','pe-is-w-wind-night pe-5x pe-va'); 
+
+}
+else if(storm.test(res.weather[0].description)&&sky=='night'){
+
+     $('#icon > i ').attr('class','pe-is-w-thunderstorm-night-1-f pe-5x pe-va'); 
+
+}
+else if(cloudy.test(res.weather[0].description)&&sky=='night'){
+
+     $('#icon > i ').attr('class','pe-is-w-partly-cloudy-3-f pe-5x pe-va'); 
+
+}
+
+else if(rainy.test(res.weather[0].description)&&sky=='night'){
+
+     $('#icon > i ').attr('class','pe-is-w-rain-night-f pe-5x pe-va'); 
+
+}
+
 
 }
 
@@ -123,6 +161,7 @@ $.ajax('https://fcc-weather-api.glitch.me/api/current?lat='+array[0]+'&lon='+arr
      method: 'GET',
      dataType: 'json',
      success: function(response){
+        console.log(response);
         $('#locname > h2').text(response.name+","+response.sys.country);
         weathericon(response);
         $('#disc h1').text(response.weather[0].main);
