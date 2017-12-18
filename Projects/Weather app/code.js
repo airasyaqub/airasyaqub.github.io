@@ -15,16 +15,15 @@ $('#clickicon i').on('mouseleave',function(){
 var d=new Date();
 var n=d.getHours();
 var sky;
+console.log(n);
+
 
 if(n>=6&&n<=18){
 sky='day';
-
 }
-
 else {
-    sky='night';
+sky='night';
 }
-
 
 
 var sunny = /(sun|clear|calm|hot)+/i;
