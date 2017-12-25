@@ -1,0 +1,119 @@
+body{
+
+	background-color: rgb(35,37,38); 
+}
+
+
+#choose{
+
+	margin-top: 15em;
+	
+}
+
+#circle{
+
+	display: inline-block;
+	font-size: 8em;
+	font-weight: bold;
+	color: white;
+	margin-right: 0.2em;
+	transition: all 300ms linear;
+	cursor: pointer;
+}
+
+#cross{
+    
+    display: inline-block;
+	font-size: 8em;
+	font-weight: bold;
+	color: white;
+	margin-left: 0.2em;
+	transition: all 300ms linear;
+	cursor: pointer;
+}
+
+#circle:hover{
+  font-size: 10em;
+  color: orange;
+
+}
+
+#cross:hover{
+  font-size: 10em;
+  color: orange;
+}
+
+#grid{
+    
+    
+	margin-top: 3em;
+	padding: 0 23.6rem;
+	display: none;
+
+}
+
+.box{
+	cursor: pointer;
+}
+
+.wrapper{
+	display: grid;
+	grid-template-columns: 8em 8em 8em;
+	grid-template-rows: 8em 8em 8em;
+	align-content: center;
+	
+}
+
+@media only screen and (max-width: 1000px) {
+
+#grid{
+
+	padding: 0 8rem;
+}
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+#grid{
+
+	padding: 0 3rem;
+	
+}
+
+
+}
+
+#wl{
+
+	margin-top: 1em;
+	display: none;
+}
+
+#wl h1{
+
+	color: white;
+}
+
+.o{
+
+	font-size: 5.5em;
+	color:white;
+}
+
+.x{
+	font-size: 5.5em;
+	color: white;
+}
+
+#rep{
+
+	cursor: pointer;
+}
+
+footer p{
+
+	margin-top: 2em;
+	color: orange;
+}
