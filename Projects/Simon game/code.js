@@ -78,10 +78,12 @@ $(document).ready(function() {
 			//return;
 		//} 
 
-			if(chkwin()){
-				$('.slice').css('cursor','default');
-				$('.slice').off('click');
-			    return; }
+			if(error==false){
+      if(chkwin()){
+        $('.slice').css('cursor','default');
+        $('.slice').off('click');
+          return; }
+         }
 
 			/*if(boxnumber==4){
 				pattern=[];
