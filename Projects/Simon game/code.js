@@ -21,31 +21,31 @@ $(document).ready(function() {
 
 	$('#onfbox').click(function(){
 		if(onoff==='off'){
-			onoff='on';
-			$('#onfbtn').css('float','right');
-			$('#box p').text('- -');
-		    gamestart=setTimeout(start,10);
-		}
+      onoff='on';
+      $('#onfbtn').css('float','right');
+      $('#strict,#start').css('cursor','pointer');
+      $('#box p').text('- -');
+        gamestart=setTimeout(start,10);
+    }
 
-		else if(onoff=='on'){
+    else if(onoff=='on'){
 
-			onoff='off';
-			$('#onfbtn').css('float','left');
-			$('#box p').text('');
-			$('#start').off('click');
-			$('#strict').off('click');
-      $('#strind').css('background-color','grey');
-			$('.slice').off('click');
-			for(var k=0;k<arrfunc.length;k++){
-				clearTimeout(arrfunc[k]);
-			}
-			/*clearTimeout(patfunc);
-			clearTimeout(patfunc1);
-			clearTimeout(patfunc2);
-			clearTimeout(patfunc4);
-			clearTimeout(patfunc3);
-			clearTimeout(gamestart);*/
-		}
+      onoff='off';
+      $('#onfbtn').css('float','left');
+      $('#box p').text('');
+      $('#strict,.slice,#start').off('click');
+      $('#strict,.slice,#start').css('cursor','default');
+      $('#strind').css('background-color','grey');  
+      for(var k=0;k<arrfunc.length;k++){
+        clearTimeout(arrfunc[k]);
+      }
+      /*clearTimeout(patfunc);
+      clearTimeout(patfunc1);
+      clearTimeout(patfunc2);
+      clearTimeout(patfunc4);
+      clearTimeout(patfunc3);
+      clearTimeout(gamestart);*/
+    }
 	});
 
 
