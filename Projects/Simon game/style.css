@@ -1,0 +1,176 @@
+body{
+
+	background-color: #E0E0E0;
+}
+
+#circle {
+  /*position: absolute;*/
+  width:450px;
+  height: 450px;
+  background-color: #000;
+  border-radius: 50%;
+  /*top:170px;*/ 
+  margin: 0 auto;
+  margin-top: 4em;
+  z-index:0;
+}
+
+.slice{
+  
+  width: 200px;
+  height: 200px;
+  float: left;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+#green{
+  border-top-left-radius: 200px;
+  background-color: green;
+  margin: 15px 5px 5px 35px;
+}
+
+#red{
+
+  border-top-left-radius: 200px;
+  background-color: red;
+  transform: rotate(90deg);
+  margin: 15px 27px 5px 5px;
+}
+
+#yellow{
+  border-top-left-radius: 230px;
+  background-color: yellow;
+  transform: rotate(270deg);
+  margin: 15px 5px 5px 35px;
+}
+
+#blue{
+  border-top-left-radius: 200px;
+  background-color: blue;
+  transform: rotate(180deg);
+  margin: 15px 27px 5px 5px;
+}
+
+#minic{
+
+	position: relative;
+	z-index: 2;
+	background-color: white;
+	border-radius: 50%;
+	border: 20px solid black;
+	width: 250px;
+	height: 250px;
+	bottom: 21em;
+	left: 6em;
+}
+
+#minic h1{
+	margin-top: 0.5em;
+
+}
+
+#controls{
+	margin-top: 0.5em;
+}
+
+#box{
+
+	background-color: #400000;
+	width: 4em;
+	height: 2em;
+	border: 1px solid black;
+	margin-left: 2.3em;
+}
+
+#box p{
+
+	color: red;
+	font-size: 1.3em;
+}
+
+#start{
+
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background-color:red;
+	border: 4px solid black;
+	margin-left: 1.5em;
+	margin-top: 0.3em;
+	cursor: pointer;
+}
+
+#strind{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: grey;
+	border: 2px solid black;
+	margin-left: 10.3em;
+	margin-top: 0.5em;
+}
+
+#strict{
+    border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background-color:yellow;
+	border: 4px solid black;
+	margin-left: 1.5em;
+	margin-top: 0.3em;
+	cursor: pointer;
+}
+
+.cnt{
+
+	margin-left: 3em;
+	color: black;
+	font-weight: bold;
+}
+
+.strt{
+
+	margin-left: 1.7em;
+	font-weight: bold;
+}
+
+.strct{
+
+	margin-left: 0.8em;
+	font-weight: bold;
+}
+
+.OFF {
+
+	margin-left: 3.3em;
+	font-weight: bold;
+}
+
+.ON{
+
+	margin-left: 0.9em;
+	font-weight: bold;
+}
+
+#onfbox{
+
+	height: 1.5em;
+	width: 4em;
+	background-color: grey;
+	margin-left: 0.5em;
+	cursor: pointer;
+}
+
+#onfbtn{
+
+	height: 1.5em;
+	width: 1.7em;
+	background-color: blue;
+	border: 2px solid black;
+	float: left;
+}
+
+.grey{
+	background-color: grey;
+}
