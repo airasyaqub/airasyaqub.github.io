@@ -34,6 +34,7 @@ $(document).ready(function() {
 			$('#box p').text('');
 			$('#start').off('click');
 			$('#strict').off('click');
+      $('#strind').css('background-color','grey');
 			$('.slice').off('click');
 			for(var k=0;k<arrfunc.length;k++){
 				clearTimeout(arrfunc[k]);
