@@ -1,0 +1,132 @@
+#banner{
+	background: url("bg1.jpeg") no-repeat center center;
+	background-size:cover;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#banner h1{
+	font-family: Oswald;
+	color: #333;
+	border-bottom: 1px solid #666;
+	padding-bottom: 20px;
+	
+}
+
+#banner p{
+	font-size: 20px;
+	margin: 40px 0;
+}
+
+
+
+.bg-inverse {
+    background-color: darkgrey!important; /*#292b2c*/
+}
+
+.navbar-nav a:hover {
+    color: #fff !important;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+    margin: 0 50px;
+}
+
+#about img{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin: 30px 0; 
+}
+
+#about{
+	margin-top:80px; 
+}
+
+#about h3{
+	color: #333;
+	border-bottom: 1px solid #333;
+	padding-bottom: 30px;
+}
+
+#about p {
+	width: 70%;
+	color: #666;
+	margin: 20px auto;
+
+}
+
+#about a{
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+ #portf{
+	background-color: #F8F8FF;
+}
+
+#portf h3{
+	color: #333;
+	border-bottom: 1px solid #333;
+	padding-bottom: 30px;
+	text-align: center;
+	padding-top: 70px; 
+}
+
+#portf .row {
+	justify-content: center;
+	padding-top: 40px;
+}
+
+#portf .row a{
+	margin: 0 5%;
+}
+
+#portf .card-deck{
+	margin: 50px 0;
+}
+
+#portf .card {
+	margin-bottom: 50px;
+}
+
+#contact h3{
+	color: #333;
+	border-bottom: 1px solid #333;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.sociol ul{
+  margin: 0 auto;
+  text-align: center;
+}
+.sociol li{
+	margin: 0 20px;
+}
+.sociol{
+	margin: 30px 0;
+}
+
+.footer{
+	background-color: darkgrey ; /*#F8F8FF*/
+	padding: 20px 0;
+}
+
+.footer p{
+	color: #333;
+}
+
+
