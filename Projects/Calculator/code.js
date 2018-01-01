@@ -1,7 +1,7 @@
 $(document).ready(function () {
 	/* body... */
      
-    var regex=/[+\-*\/%]/;
+    var regex=/[\.+\-*\/%]/;
     var regex1=/^-?\d+\.?(\d+)?$/;
     var flag=0;
     var str;
