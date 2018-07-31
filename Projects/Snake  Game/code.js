@@ -16,7 +16,7 @@ $(document).ready(function(){
 	var dx;
 	var dy;
 	//for frame cotrol
-	var fps = 45;
+	var fps = 25;
 	var now;
 	var then = Date.now();
 	var interval = 1000/fps;
@@ -45,7 +45,7 @@ $(document).ready(function(){
 		dy=0;
 		ourFood=new food(foodx,foody);
 		currentMove='r';
-		for(var i=0;i<45;i++){
+		for(var i=0;i<5;i++){
 			x=10+i;
 			snakeArr.push(new snake(x,y));
 			paint(snakeArr[i].x,snakeArr[i].y,'white','black',cellW);
