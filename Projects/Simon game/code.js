@@ -208,7 +208,7 @@ $(document).ready(function() {
      		 }
 
      		 function chkwin(){
-     		 	if(boxnumber===4){
+     		 	if(boxnumber===20){
      		 		$('#box p').text('won');
      		 		wins.play();
      		 		//pattern=[];
