@@ -1,8 +1,8 @@
 {
   "name": "Github Finder",
   "short_name": "Github Finder",
-  "theme_color": "#dfe0d4",
-  "background_color": "#2b628e",
+  "theme_color": "#2b628e",
+  "background_color": "#dfe0d4",
   "display": "standalone",
   "start_url": "https://airasyaqub.github.io/Projects/github_pwa/index.html",
   "icons": [
