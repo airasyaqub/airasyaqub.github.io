@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Github Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./vex/dist/css/vex.css" />
+  <link rel="stylesheet" href="./vex/dist/css/vex-theme-os.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./src/style.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="manifest" href="./manifest.json">
+</head>
+
+<body class="d-flex flex-column justify-content-center align-items-center">
+
+<section id="main" class="container">
+	<img src="assets/favicon.png" data-aos="fade-right" data-aos-once="true">
+	<br>
+	<input type="text" name="input" placeholder="github user-name" class="col-md-6 col-sm-9 col-11" autofocus data-aos="fade-right" data-aos-once="true">
+	<br>
+	<button class="btn col-md-6 col-sm-9 col-11" data-aos="fade-right" data-aos-once="true"><i class="fa fa-search"></i>Search</button>
+</section>
+
+<div id="searchIcon">
+		<i class="fa fa-search"></i>
+</div>
+
+<section id="mainuser" class="container-fluid">
+</section>
+
+<section id="users" class="container-fluid">
+</section>
+
+
+
+
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="./vex/dist/js/vex.combined.min.js"></script>
+<script>vex.defaultOptions.className = 'vex-theme-os';</script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="./src/code.js"></script>

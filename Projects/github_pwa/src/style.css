@@ -1,0 +1,253 @@
+html, body {
+  background-color: #DFE0D4 !important;
+  width: 100%;
+  height: 100%; }
+
+#main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  #main input {
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 4px;
+    height: 40px;
+    color: gray;
+    outline: gray;
+    font-weight: 450; }
+  #main button {
+    background-color: #6D707C;
+    border: 1px solid #6D707C;
+    outline: none;
+    letter-spacing: 0.05em;
+    color: #353947;
+    font-weight: 600;
+    cursor: pointer; }
+    #main button i {
+      margin-right: 0.3em; }
+
+#searchIcon {
+  position: fixed;
+  background-color: #394BBD;
+  width: 70px;
+  height: 30px;
+  right: 0;
+  top: 15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+  transition: all 300ms; }
+  #searchIcon i {
+    color: white; }
+
+#searchIcon:hover {
+  background-color: #28347C; }
+
+#mainuser {
+  display: none; }
+  #mainuser #user {
+    border: 2px solid #1C2543;
+    display: flex;
+    padding: 0;
+    margin: 0 auto; }
+    #mainuser #user .image {
+      padding: 1em 1em 1em 1em;
+      width: 50%; }
+      #mainuser #user .image img {
+        width: 250px; }
+    #mainuser #user .info {
+      padding: 0;
+      width: 100%; }
+      #mainuser #user .info .upper {
+        margin-top: 0.5em; }
+        #mainuser #user .info .upper p {
+          border-bottom: 2px solid #3E4352;
+          padding-bottom: 1em;
+          color: #1C2543; }
+      #mainuser #user .info .lower p {
+        margin: 0 auto;
+        text-align: center;
+        color: #1C2543; }
+      #mainuser #user .info .lower .table table {
+        width: 100%; }
+        #mainuser #user .info .lower .table table td {
+          padding-bottom: 0em;
+          text-align: center;
+          border: 0; }
+          #mainuser #user .info .lower .table table td .btns {
+            width: 150px;
+            border: 1px;
+            border-radius: 2px;
+            color: white;
+            cursor: pointer;
+            outline: none; }
+            #mainuser #user .info .lower .table table td .btns a {
+              text-decoration: none;
+              color: white; }
+          #mainuser #user .info .lower .table table td .btns:hover {
+            border-color: #9ecaed;
+            box-shadow: 0 0 10px #9ecaed; }
+
+@media (max-width: 670px) {
+  #mainuser #user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80% !important; }
+
+  #mainuser #user .image {
+    width: 100%;
+    padding: 0;
+    text-align: center; }
+
+  #mainuser #user .image img {
+    width: 90%; }
+
+  #mainuser #user .info .upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  #mainuser #user .info .upper p {
+    width: 100% !important;
+    text-align: center; }
+
+  #mainuser #user .info .lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+@media (max-width: 475px) {
+  #mainuser #user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important; }
+
+  #mainuser #user .image {
+    width: 100%;
+    padding: 0;
+    text-align: center; }
+
+  #mainuser #user .image img {
+    width: 95%; }
+
+  #mainuser #user .info .upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  #mainuser #user .info .upper p {
+    width: 100% !important;
+    text-align: center; }
+
+  #mainuser #user .info .lower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+  #mainuser #user .info .lower .table table td .btns {
+    width: 100%; } }
+@media (max-width: 320px) {
+  #mainuser #user .info .lower .table table td .btns {
+    width: 90%; }
+
+  #mainuser #user .image {
+    width: 70%; }
+
+  #mainuser #user .image img {
+    width: 100%; } }
+#users {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2em; }
+  #users #user {
+    border: 2px solid #1C2543;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 1em;
+    margin-bottom: 2em; }
+    #users #user .image {
+      width: 100%;
+      padding: 0;
+      text-align: center; }
+      #users #user .image img {
+        width: 100%; }
+    #users #user .info {
+      padding: 0;
+      width: 100%; }
+      #users #user .info .upper {
+        margin-top: 0.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #users #user .info .upper p {
+          border-bottom: 2px solid #3E4352;
+          padding-bottom: 0.3em;
+          color: #1C2543;
+          width: 100% !important;
+          text-align: center;
+          height: 50px; }
+      #users #user .info .lower {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #users #user .info .lower p {
+          margin: 0 auto;
+          text-align: center;
+          color: #1C2543;
+          font-size: 13px;
+          height: 100px;
+          overflow: auto; }
+        #users #user .info .lower .table table {
+          width: 100%; }
+          #users #user .info .lower .table table td {
+            padding-bottom: 0em;
+            text-align: center;
+            border: 0; }
+            #users #user .info .lower .table table td .btns {
+              width: 100%;
+              border: 1px;
+              border-radius: 2px;
+              color: white;
+              cursor: pointer;
+              outline: none;
+              padding: 6px;
+              font-size: 11px; }
+              #users #user .info .lower .table table td .btns a {
+                text-decoration: none;
+                color: white; }
+            #users #user .info .lower .table table td .btns:hover {
+              border-color: #9ecaed;
+              box-shadow: 0 0 10px #9ecaed; }
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 23%;
+    max-width: 23%; } }
+@media (max-width: 401px) {
+  #users #user .info .lower .table table td .btns {
+    padding: 5px;
+    font-size: 15px; } }
+@media (max-width: 320px) {
+  #users #user .info .lower .table table td .btns {
+    padding: 5px;
+    font-size: 12px; } }
+
+/*# sourceMappingURL=style.css.map */
