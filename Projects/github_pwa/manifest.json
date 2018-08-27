@@ -4,8 +4,7 @@
   "theme_color": "#dfe0d4",
   "background_color": "#2b628e",
   "display": "standalone",
-  "Scope": "/",
-  "start_url": "/index.html",
+  "start_url": "airasyaqub.github.io/Projects/github_pwa/index.html",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
