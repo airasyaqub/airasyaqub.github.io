@@ -1,4 +1,4 @@
-var cacheName = 'static-content-v1';
+var cacheName = 'static-content-v2';
 var dataCache= 'dynamic-content-v1';
 var filesToCache = [
   './src/style.css',
