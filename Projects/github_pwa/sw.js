@@ -1,14 +1,14 @@
 var cacheName = 'static-content-v1';
 var dataCache= 'dynamic-content-v1';
 var filesToCache = [
-  '/src/style.css',
-  '/src/code.js',
-  '/index.html',
-  '/vex/dist/css/vex-theme-os.css',
-  '/vex/dist/css/vex.css',
-  '/vex/dist/js/vex.combined.min.js',
-  '/assets/favicon.png',
-  '/',
+  './src/style.css',
+  './src/code.js',
+  './index.html',
+  './vex/dist/css/vex-theme-os.css',
+  './vex/dist/css/vex.css',
+  './vex/dist/js/vex.combined.min.js',
+  './assets/favicon.png',
+  './',
 ];
 
 
