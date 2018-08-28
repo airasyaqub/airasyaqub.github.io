@@ -42,7 +42,35 @@ self.addEventListener('activate', function(e) {
 
 
 
+
 self.addEventListener('fetch', function(e) {
+  if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') return;
+   console.log(e.request);
+  e.respondWith(
+      caches.match(e.request).then(function(response){
+        if (response) {
+          console.log('getting from cache');
+          return response;
+        }
+        else{
+          return fetch(e.request).then(function(response){
+            if ((e.request.url.startsWith('https://api.github.com')&&response.status==200)||/githubusercontent/.test(e.request.url)){
+              var clonedResponse=response.clone();
+              caches.open(dataCache).then(function(cache){
+                console.log('cloning network req. response in cache');
+                cache.put(e.request,clonedResponse);
+              });
+            }
+            console.log('getting from network');
+            return response;
+          });
+        }
+      })
+  );
+});
+
+
+/*self.addEventListener('fetch', function(e) {
   if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') return;
   //console.log(e.request);
   e.respondWith(
@@ -65,7 +93,7 @@ self.addEventListener('fetch', function(e) {
       });
     })
   );
-});
+});*/
 
 
 
@@ -78,40 +106,6 @@ self.addEventListener('fetch', function(e) {
          
         //}
       })*/
-
-
-
-
-
-
-
-
-/*self.addEventListener('fetch', function(e) {
-  if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') return;
-   console.log(e.request);
-  e.respondWith(
-
-      caches.match(e.request).then(function(response){
-        if (response) {
-          console.log('getting from cache');
-          return response;
-        }
-        //else{
-          return fetch(e.request).then(function(response){
-            //if (e.request.url.startsWith('https://api.github.com')||e.request.url.startsWith('https://avatars2.githubusercontent.com')){
-              var clonedResponse=response.clone();
-              caches.open(dataCache).then(function(cache){
-                console.log('cloning network req. response in cache');
-                cache.put(e.request,clonedResponse);
-              });
-            //}
-            console.log('getting from network');
-            return response;
-          });
-        //}
-      })
-  );
-});*/
 
 
 
