@@ -47,7 +47,7 @@ self.addEventListener('fetch', function(e) {
   //console.log(e.request);
   e.respondWith(
     fetch(e.request).then(function(response){
-      if (e.request.url.startsWith('https://api.github.com')){
+      if ((e.request.url.startsWith('https://api.github.com')&&response.status==200)||/githubusercontent/.test(e.request.url)){
         var clonedResponse=response.clone();
         caches.open(dataCache).then(function(cache){
           console.log('cloning network req. response in cache');
