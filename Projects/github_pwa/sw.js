@@ -44,7 +44,7 @@ self.addEventListener('activate', function(e) {
 
 
 self.addEventListener('fetch', function(e) {
-  if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') return;
+  //if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') return;
    //console.log(e.request);
   e.respondWith(
       caches.match(e.request).then(function(response){
