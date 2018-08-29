@@ -226,10 +226,11 @@ $(document).ready(function () {
 		if(response.name==null){name='Not specified';}
 		if(response.company==null){company='Not yet employed';}
 		if(response.bio==null){bio='Not yet added';}
+		var i=searchIndex(response);
 
 		$('#users').append(
 
-		`<div id="user" class="col-lg-4 col-md-4 col-sm-5 col-11" data-aos="fade-right" data-aos-once="true">
+		`<div id="user" class="col-lg-4 col-md-4 col-sm-5 col-11" data-aos="fade-right" data-aos-once="true" data-index=${i}>
 		<div class="image">
 			<img src="${response.avatar_url}">
 		</div>
@@ -260,16 +261,25 @@ $(document).ready(function () {
 		gettingResponse=false;
 	}
 
+	function searchIndex(response){
+		var res;
+		followersArr.forEach(function(e,i){
+			if (response.login==e.login){res=i;}
+		});
+		return res;
+	}
+
 	
 
 	$(document).on('click','#users .followers' ,function(){
-		var clickedFollower=$(this).closest('#user').index();
+		var clickedFollower=Number($(this).closest('#user').attr("data-index"));
 		var str=$(this).text();
 		//console.log(str);
 		var patt = /\(0\)/;
 		if(!patt.test(str)&&gettingResponse==false){
 			errorShowed=false;
 			gettingResponse=true;
+		
 			getResponse(followersArr[clickedFollower],'followers');	
 		}
 			
@@ -278,13 +288,14 @@ $(document).ready(function () {
 	});
 
 	$(document).on('click','#users .following' ,function(){
-		var clickedFollower=$(this).closest('#user').index();	
+		var clickedFollower=Number($(this).closest('#user').attr("data-index"));	
 		var str=$(this).text();
 		//console.log(str);
 		var patt = /\(0\)/;
 		if(!patt.test(str)&&gettingResponse==false){
 			errorShowed=false;
 			gettingResponse=true;
+		
 			getResponse(followersArr[clickedFollower],'following');	
 		}	
 		//console.log($(this).closest('#user').index());

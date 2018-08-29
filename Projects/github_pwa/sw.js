@@ -45,11 +45,11 @@ self.addEventListener('activate', function(e) {
 
 self.addEventListener('fetch', function(e) {
   if (e.request.cache === 'only-if-cached' && e.request.mode !== 'same-origin') return;
-   console.log(e.request);
+   //console.log(e.request);
   e.respondWith(
       caches.match(e.request).then(function(response){
         if (response) {
-          console.log('getting from cache');
+          //console.log('getting from cache');
           return response;
         }
         else{
@@ -57,11 +57,17 @@ self.addEventListener('fetch', function(e) {
             if ((e.request.url.startsWith('https://api.github.com')&&response.status==200)||/githubusercontent/.test(e.request.url)){
               var clonedResponse=response.clone();
               caches.open(dataCache).then(function(cache){
-                console.log('cloning network req. response in cache');
+               /* if(/githubusercontent/.test(e.request.url)){
+                  console.log('cloning image response in cache');
+                }
+                else{
+                  console.log('cloning network req. response in cache');
+                }*/
+                
                 cache.put(e.request,clonedResponse);
               });
             }
-            console.log('getting from network');
+            //console.log('getting from network');
             return response;
           });
         }
